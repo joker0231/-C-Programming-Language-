@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* 将两个二维数组存储在三维数组中 */
 void mat_add(const int a[4][3], const int b[4][3], int c[2][4][3])
 {
     int i, j, k;
@@ -16,7 +15,6 @@ void mat_add(const int a[4][3], const int b[4][3], int c[2][4][3])
             }
 }
 
-/* 显示三维数组 */
 void mat_print(const int c[2][4][3])
 {
     int i, j, k;
