@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 #define NUMBER 30
 int main(void)
 {
@@ -6,18 +7,18 @@ int main(void)
 	char s[NUMBER][128];
 	
 	for(i=0 ; i<NUMBER ; i++){
-		printf("s[%d]:" , i+1);
-		scanf("%s" , s[i][128]);
-		if(s[i][128]=='$$$$$'){
+		printf("s[%d]:" , i);
+		scanf("%s" , s[i]);
+		if (strcmp(s[i], "$$$$$") == 0){
 			break;
 		}
 	}
 	
 	for(i=0 ; i<NUMBER ; i++){
-		if(s[i][128]=='$$$$$'){
+	    printf("s[%d]=\"%s\"\n" , i , s[i]);
+		if (strcmp(s[i+1], "$$$$$") == 0){
 			break;
 		}
-		printf("s[%d]=\"%s\"\n" , i , s[i]);
 	}
 	return 0;
 }
