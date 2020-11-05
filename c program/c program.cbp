@@ -30,8 +30,9 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="9-1.c">
+		<Unit filename="9-7.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
